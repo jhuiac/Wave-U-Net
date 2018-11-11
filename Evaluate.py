@@ -1,6 +1,9 @@
 import numpy as np
 import tensorflow as tf
 import librosa
+
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 from mpl_toolkits.axes_grid1 import make_axes_locatable

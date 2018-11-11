@@ -23,24 +23,13 @@ The Wave-U-Net also participated in the [SiSec separation campaign](https://sise
 ## Requirements
 
 GPU strongly recommended to avoid very long training times.
-Python 2.7
-Python package requirements below:
 
-```
-sacred==0.7.3
-tensorflow-gpu==1.8.0
-librosa==0.6.1
-scikit-image==0.13.1
-soundfile==0.10.2
-scikits.audiolab==0.11.0
-lxml==4.2.1
-musdb==0.2.3
-museval==0.2.0
-```
+Use Python 2.7. Python package requirements are specified in environment.yml.
 
-These required packages are also saved in the file requirements.txt located in this repository, so you can clone the repository and then execute the following in the downloaded repository's path to install all the required packages at once:
+Run `conda env create` or use docker:
 
-``pip install -r requirements.txt``
+* `docker build -t waveunet -f Dockerfile .`
+* `docker run --rm --runtime nvidia -it waveunet /bin/bash`
 
 ### Download datasets
 
